@@ -67,6 +67,7 @@ type Details {
 }
 
 type Employee implements Identifiable @key(fields: "id") {
+  bonus: Float @shareable
   currentMood: Mood! @external
   derivedMood: Mood! @requires(fields: "currentMood")
   details: Details! @shareable
