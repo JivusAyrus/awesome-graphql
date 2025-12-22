@@ -1,4 +1,3 @@
 type Employee @key(fields: "id") {
-  bonus: Float @shareable
   id: Int!
 }
